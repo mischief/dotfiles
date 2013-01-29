@@ -1,0 +1,20 @@
+# to update: cat $HOME/lib/plumbing | 9p write plumb/rules
+
+
+browser = xombrero
+editor = gvim
+
+type is text
+data matches '(/[a-zA-Z0-9_@-.]+)+.(jpe?g|JPE?G|gif|GIF|tiff?|TIFF?|ppm|bit|png|PNG)'
+plumb start page -w $data
+
+type is text
+data matches '(https?|ftp|file|gopher|mailto|news|nntp|telnet|wais|prospero)://[a-zA-Z0-9_@\-]+([.:][a-zA-Z0-9_@\-]+)*/?[a-zA-Z0-9_?,%#~&/\-+=]+([:.][a-zA-Z0-9_?,%#~&/\-+=]+)*\.(jpe?g|JPE?G|gif|GIF|tiff?|TIFF?|ppm|bit|png|PNG)'
+plumb start pagepic $data
+
+type is text
+data matches '(https?)://[a-zA-Z0-9_@\-:.\/]+\.ps\.gz'
+plumb start pagepsgz $data
+
+include basic
+
