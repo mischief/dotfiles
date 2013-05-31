@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/mischief/projects/taskhttpd'
+let g:netrw_dirhist_2='/home/mischief/code/go/src/github.com/robfig/revel/samples/booking'
+let g:netrw_dirhist_3='/home/mischief/.config/awesome'
+let g:netrw_dirhist_4='/home/mischief/projects'
+let g:netrw_dirhist_5='/home/mischief/.mozilla/firefox/f9hljyw6.default/chrome'
+let g:netrw_dirhist_6='/home/mischief/code/go/src/github.com/mischief/lsystem'

@@ -10,7 +10,7 @@ bind -b $home/go/bin /bin
 bind -b $home/code/go/bin /bin
 
 # env
-font=/lib/font/bit/icons/icons.16.font
+font=/lib/font/bit/fixed/unicode.9x15.font
 cpu=sigma.offblast.org
 
 if(! syscall create /tmp/xxx 1 0666 >[2]/dev/null)
