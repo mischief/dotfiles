@@ -4,12 +4,12 @@ none:VQ:
 
 # install plan 9 'dotfiles'
 install:V: lib
-	
+
 # setup $home/lib
-lib:Q:	$home/lib
+lib:U:	$home/lib
 	dircp lib $home/lib
 
 # create $home/lib/ if necessary
-$home/lib:Q:
+$home/lib:
 	mkdir $home/lib
 
