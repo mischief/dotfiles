@@ -6,7 +6,7 @@ none:VQ:
 install:V: lib
 
 # setup $home/lib
-lib:U:	$home/lib
+lib:VU:	$home/lib
 	dircp lib $home/lib
 
 # create $home/lib/ if necessary
