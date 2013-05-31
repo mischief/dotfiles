@@ -1,0 +1,10 @@
+[ui]
+editor=hold
+username=mischief@offblast.org
+[extensions]
+purge =
+hgfactotum=
+mq=
+[trusted]
+users=glenda
+groups=glenda
