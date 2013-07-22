@@ -5,7 +5,6 @@ DOTFILES=\
 				conkyrc\
 				gdbinit\
 				gitconfig\
-				gnupg\
 				hgrc\
 				Makefile\
 				profile\
