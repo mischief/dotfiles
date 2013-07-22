@@ -1,0 +1,10 @@
+[user]
+	name = mischief
+	email = mischief@offblast.org
+[core]
+	editor = vim
+[color]
+	status = auto
+	branch = auto
+	interactive = auto
+	diff = auto

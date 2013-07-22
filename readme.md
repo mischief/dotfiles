@@ -2,14 +2,15 @@
 
 ## Linux
 
-copy the files to $HOME
+    cd linux
+    make install
 
 ## Plan 9
 
-in rc:
+to download and install these files from github sans git on plan 9, do the following:
 
     webfs; ramfs; cd /tmp
     hget https://github.com/mischief/dotfiles/archive/master.tar.gz | gunzip | tar xz
-    cd dotfiles-master
+    cd dotfiles-master/plan9
     mk install
 

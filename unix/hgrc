@@ -1,0 +1,7 @@
+[ui]
+username = mischief <mischief@offblast.org>
+
+[extensions]
+hgext.bookmarks =
+hgext.git = 
+
