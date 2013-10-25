@@ -1,0 +1,51 @@
+# to update: cat $HOME/lib/plumbing | 9p write plumb/rules
+
+browser = chromium
+editor = gvim
+
+#include basic
+
+addr=':(#?[0-9]+)'
+protocol='(https?|ftp|file|gopher|mailto|news|nntp|telnet|wais)'
+domain='[a-zA-Z0-9_@]+([.:][a-zA-Z0-9_@]+)*/?[a-zA-Z0-9_?,%#~&/\-]+'
+files='([:.][a-zA-Z0-9_?,%#~&/\-]+)*'
+
+image='\.(jpe?g|JPE?G|gif|GIF|tiff?|TIFF?|ppm|bit|png|PNG)'
+documents='\.(ps\.gz|ps|pdf)'
+
+#images get viewed
+type is text
+data matches $protocol$files$image
+plumb start rc -c 'hget '''$0''' | page -w'
+#pagepic $data
+
+# web documents get viewed
+type is text
+data matches $protocol$files$documents
+plumb start rc -c 'hget '''$0''' | page -w'
+
+# urls go to web browser
+type is text
+data matches $protocol://$domain$files
+plumb to web
+plumb start $browser $0
+
+# local images get viewed
+type is text
+data matches $files$image
+plumb start page -w $data
+
+# postscript and pdf get viewed
+
+type is text
+data matches $files$documents
+plumb start page -w $data
+
+# files go to editor
+type is text
+data matches $files
+arg isfile $1
+data set $file
+plumb to edit
+plumb start $editor
+
