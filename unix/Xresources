@@ -72,7 +72,7 @@
 ! xterm ----------------------------------------------------------------------
 !
 ! xterm*geometry:           80x25
-xterm*faceName:           terminus:bold:pixelsize=14
+xterm*faceName:           unifont:Medium:pixelsize=16
 ! !xterm*font:              -*-dina-medium-r-*-*-16-*-*-*-*-*-*-*
 xterm*dynamicColors:      true
 xterm*utf8:               2
@@ -84,11 +84,35 @@ xterm*saveLines:          512
 ! xterm*rightScrollBar:     true
 xterm*jumpScroll:         true
 xterm*multiScroll:        true
-xterm*toolBar:            false0
+xterm*toolBar:            false
+xterm*urgentOnBell:       true
+xterm*showBlinkAsBold:     true
 
 ! send selected text to browser
 *VT100*translations: #override Meta <Btn1Up>: exec-formatted("x-www-browser '%t'", PRIMARY)
 
 ! make urls selectable
 xterm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
+
+! uxterm ----------------------------------------------------------------------
+!
+! uxterm*geometry:           80x25
+uxterm*faceName:           unifont:Medium:pixelsize=16
+! !uxterm*font:              -*-dina-medium-r-*-*-16-*-*-*-*-*-*-*
+uxterm*dynamicColors:      true
+uxterm*utf8:               2
+uxterm*eightBitInput:      true
+uxterm*saveLines:          512
+! uxterm*scrollKey:          true
+! uxterm*scrollTtyOutput:    false
+! uxterm*scrollBar:          true
+! uxterm*rightScrollBar:     true
+uxterm*jumpScroll:         true
+uxterm*multiScroll:        true
+uxterm*toolBar:            false
+uxterm*urgentOnBell:       true
+uxterm*showBlinkAsBold:     true
+
+! make urls selectable
+uxterm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
 
