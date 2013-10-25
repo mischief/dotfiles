@@ -1,0 +1,4 @@
+#!/bin/sh
+
+xclip -o | plumb -i
+

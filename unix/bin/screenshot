@@ -1,0 +1,23 @@
+#!/bin/sh
+# $SCROTwm: screenshot.sh,v 1.2 2009/01/27 16:16:20 marco Exp $
+#
+
+SCROT='/usr/bin/scrot'
+AFTER='mv $f ~/stuff/screenshots/ 2>/dev/null'
+
+screenshot() {
+        echo $SCROT with "$AFTER"
+        case $1 in
+        all)
+                exec $SCROT -m -e "$AFTER"
+                ;;
+        wind*)
+                sleep 1
+                exec $SCROT -s -e "$AFTER"
+                ;;
+        *)
+                ;;
+        esac;
+}
+
+screenshot $1
