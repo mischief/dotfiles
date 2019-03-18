@@ -77,6 +77,7 @@ xterm*multiScroll:        true
 xterm*toolBar:            false
 xterm*urgentOnBell:       true
 xterm*showBlinkAsBold:     true
+xterm*bellIsUrgent:			true
 
 ! send selected text to browser
 *VT100*translations: #override Meta <Btn1Up>: exec-formatted("x-www-browser '%t'", PRIMARY)
@@ -102,6 +103,7 @@ uxterm*multiScroll:        true
 uxterm*toolBar:            false
 uxterm*urgentOnBell:       true
 uxterm*showBlinkAsBold:     true
+uxterm*bellIsUrgent:		true
 
 ! make urls selectable
 uxterm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
