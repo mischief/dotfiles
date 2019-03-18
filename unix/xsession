@@ -1,5 +1,7 @@
 #!/bin/sh
 
+ssh-add </dev/null
+
 # turn capslock into left-control
 xmodmap -e 'remove Lock = Caps_Lock'
 xmodmap -e 'keysym Caps_Lock = Control_L'
