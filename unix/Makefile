@@ -21,7 +21,7 @@ all:
 	@echo use make install to install to $(PREFIX)
 
 $(PREFIX)/.%: %
-	$(LN) $(PWD)/$< $@
+	$(LN) $(CURDIR)/$< $@
 
 .PHONY: install
 install:	$(addprefix $(PREFIX)/.,$(DOTFILES) $(DOTDIRS))
