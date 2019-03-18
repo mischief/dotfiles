@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# Core size
+ulimit -c 500000
+

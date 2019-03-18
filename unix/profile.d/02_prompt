@@ -1,0 +1,4 @@
+#!/bin/sh
+
+export PS1='${USER}@$(hostname):${PWD/$HOME/\~} $ '
+

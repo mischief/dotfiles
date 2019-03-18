@@ -1,0 +1,12 @@
+#!/bin/sh
+
+export PLAN9=/usr/local/plan9
+export PATH=$PATH:$PLAN9/bin
+
+export GS_FONTPATH=$PLAN9/postscript/font
+
+export font=$PLAN9/font/lucm/unicode.9.font
+export home=$HOME
+export prompt='$H=; '
+export user=$USER
+

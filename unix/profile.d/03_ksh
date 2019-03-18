@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# ksh oddities
+
+case ${KSH_VERSION:-} in
+	*MIRBSD\ KSH*|*LEGACY\ KSH*)
+	case ${LC_ALL:-${LC_CTYPE:-${LANG:-}}} in
+		*[Uu][Tt][Ff]8*|*[Uu][Tt][Ff]-8*) set -U ;;
+		*) set +U ;;
+	esac
+	
+	# History
+	if [[ -z $HISTFILE ]]; then
+		export HISTFILE=$HOME/.ksh_history
+	fi
+esac
+

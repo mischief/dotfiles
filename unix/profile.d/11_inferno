@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# inferno wm args
+export EMU="-r$HOME/src/inferno -c0 -g1024x768"
+

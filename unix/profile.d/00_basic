@@ -1,0 +1,25 @@
+#!/bin/sh
+
+# Locale settings
+export TZ=US/Pacific
+export LANG=en_US.UTF-8
+export LC_CTYPE=en_US.UTF-8
+
+# Programs
+export EDITOR=vim
+export BROWSER=google-chrome
+
+# Pager setup
+export PAGER=less
+export LESSCHARSET=utf-8
+export LESSSECURE=1
+export LESS=-R
+
+# vi mode
+set -o vi
+
+# Set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+
