@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# no fucking bells
+xset b off
+
 ssh-add </dev/null
 
 # turn capslock into left-control
@@ -8,10 +11,22 @@ xmodmap -e 'keysym Caps_Lock = Control_L'
 xmodmap -e 'add Control = Control_L'
 
 # turn off the stupid middle-click-scroll thing
-# TODO: find a portable method of fiddling with xinput props
-xinput set-prop 14 339 0
+if command -V xinput; then
+	xinput set-prop "TPPS/2 IBM TrackPoint" "libinput Button Scrolling Button" 0
+fi
+
+# sync clipboards
+if command -V autocutsel; then
+	autocutsel -fork &
+	autocutsel -selection PRIMARY -fork &
+fi
 
 xscreensaver -no-splash &
+
+# redshift in SFO
+if command -V redshift; then
+	redshift -l 37.78:122.41 &
+fi
 
 spectrwm
 
