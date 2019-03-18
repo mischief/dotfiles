@@ -23,6 +23,10 @@ all:
 $(PREFIX)/.%: %
 	$(LN) $(CURDIR)/$< $@
 
+.PHONY:	.%
+.%:	$(PREFIX)/.%
+	@:;
+
 .PHONY: install
 install:	$(addprefix $(PREFIX)/.,$(DOTFILES) $(DOTDIRS))
 
