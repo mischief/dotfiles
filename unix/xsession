@@ -5,6 +5,10 @@ xmodmap -e 'remove Lock = Caps_Lock'
 xmodmap -e 'keysym Caps_Lock = Control_L'
 xmodmap -e 'add Control = Control_L'
 
+# turn off the stupid middle-click-scroll thing
+# TODO: find a portable method of fiddling with xinput props
+xinput set-prop 14 339 0
+
 xscreensaver -no-splash &
 
 spectrwm
