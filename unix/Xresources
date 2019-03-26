@@ -3,6 +3,10 @@
 XTerm.customization:			fuck
 UXTerm.customization:			fuck
 
+! nice looking colors
+XTerm.termName: xterm-256color
+UXTerm.termName: xterm-256color
+
 ! solarized ---------------------
 #define S_base03        #002b36
 #define S_base02        #073642
