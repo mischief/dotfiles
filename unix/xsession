@@ -28,6 +28,11 @@ if command -V redshift; then
 	redshift -l 37.78:122.41 &
 fi
 
+# try to fix the display layout
+if command -V autorandr; then
+	autorandr -c
+fi
+
 spectrwm
 
 mv $HOME/.xsession-errors $HOME/.xsession-errors.prev
