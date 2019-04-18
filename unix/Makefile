@@ -11,6 +11,7 @@ DOTFILES=\
 	profile \
 	spectrwm.conf \
 	tmux.conf \
+	vimrc \
 	xsession \
 	Xresources
 

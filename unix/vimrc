@@ -1,0 +1,25 @@
+set mouse=
+
+syntax on
+filetype plugin on
+
+nnoremap ,N :NERDTreeToggle<CR>
+nnoremap ,T :TagbarToggle<CR>
+
+" G: recursive grep, put results in quickfix
+command -nargs=+ -complete=file G cgetexpr system("grep -srn --binary-files=without-match --exclude-dir=.git . -e <args>")
+
+" open the quickfix window whenever a quickfix command is executed (like :make) AND there are valid errors to display.
+augroup QuickFix
+	autocmd!
+	autocmd QuickFixCmdPost [^l]* cwindow
+augroup END
+
+" solarized!
+set t_Co=16
+set background=dark
+colorscheme solarized
+
+" modelines enabled
+set modeline
+
