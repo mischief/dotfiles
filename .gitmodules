@@ -1,0 +1,12 @@
+[submodule "unix/vim/pack/nerdtree"]
+	path = unix/vim/pack/plugins/start/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "unix/vim/pack/tagbar"]
+	path = unix/vim/pack/plugins/start/tagbar
+	url = https://github.com/majutsushi/tagbar.git
+[submodule "unix/vim/pack/mischief/start/vim-go"]
+	path = unix/vim/pack/plugins/start/vim-go
+	url = https://github.com/fatih/vim-go.git
+[submodule "unix/vim/pack/colors/opt/vim-colors-solarized"]
+	path = unix/vim/pack/colors/opt/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized.git

@@ -15,7 +15,8 @@ DOTFILES=\
 	Xresources
 
 DOTDIRS=\
-	profile.d
+	profile.d \
+	vim
 
 all:
 	@echo use make install to install to $(PREFIX)
