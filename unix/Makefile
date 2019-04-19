@@ -1,6 +1,7 @@
 PREFIX?=$(HOME)
 
-# to make copies instead of links, make LN=cp
+# to make copies instead of links: make LN='cp -r' install
+# to force overwrites: make -B LN='ln -sf' install
 LN=ln -s
 
 DOTFILES=\
