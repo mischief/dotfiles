@@ -14,6 +14,7 @@ export PAGER=less
 export LESSCHARSET=utf-8
 export LESSSECURE=1
 export LESS=-R
+[ -x /usr/bin/lesspipe ] && eval "$(lesspipe)"
 
 # vi mode
 set -o vi
