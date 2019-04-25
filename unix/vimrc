@@ -23,3 +23,6 @@ colorscheme solarized
 " modelines enabled
 set modeline
 
+" folding based on syntax
+set foldmethod=syntax
+
