@@ -10,3 +10,6 @@
 [submodule "unix/vim/pack/colors/opt/vim-colors-solarized"]
 	path = unix/vim/pack/colors/opt/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "unix/vim/pack/plugins/start/zig.vim"]
+	path = unix/vim/pack/plugins/start/zig.vim
+	url = https://github.com/ziglang/zig.vim
