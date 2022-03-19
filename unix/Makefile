@@ -9,6 +9,7 @@ DOTFILES=\
 	gitconfig \
 	hgrc \
 	htoprc \
+	bashrc \
 	profile \
 	spectrwm.conf \
 	tmux.conf \
@@ -23,6 +24,7 @@ DOTDIRS=\
 all:
 	@echo use make install to install to $(PREFIX)
 
+.SECONDARY:
 $(PREFIX)/.%: %
 	$(LN) $(CURDIR)/$< $@
 
