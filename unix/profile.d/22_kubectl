@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if command -v kubectl>/dev/null; then
+if command -v kubectl>/dev/null && test -n "${BASH}"; then
 	source <(kubectl completion bash)
 fi
 
