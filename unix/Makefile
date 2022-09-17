@@ -7,6 +7,7 @@ LN=ln -s
 DOTFILES=\
 	gdbinit \
 	gitconfig \
+	gitignore \
 	hgrc \
 	htoprc \
 	bashrc \
