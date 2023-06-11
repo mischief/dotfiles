@@ -13,3 +13,6 @@
 [submodule "unix/vim/pack/plugins/start/zig.vim"]
 	path = unix/vim/pack/plugins/start/zig.vim
 	url = https://github.com/ziglang/zig.vim
+[submodule "unix/vim/pack/plugins/start/vim-fetch"]
+	path = unix/vim/pack/plugins/start/vim-fetch
+	url = https://github.com/wsdjeg/vim-fetch.git
