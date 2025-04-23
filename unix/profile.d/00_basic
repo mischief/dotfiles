@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Locale settings
-export TZ=US/Pacific
+export TZ=America/Los_Angeles
 export LANG=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
 
