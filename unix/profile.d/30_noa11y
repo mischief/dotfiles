@@ -1,0 +1,5 @@
+#!/bin/sh
+
+export NO_AT_BRIDGE=1
+export GTK_A11Y=none
+
