@@ -26,3 +26,6 @@ set modeline
 " folding based on syntax
 set foldmethod=syntax
 
+" :Man
+runtime! ftplugin/man.vim
+
