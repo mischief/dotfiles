@@ -13,7 +13,7 @@ export BROWSER=google-chrome
 export PAGER=less
 export LESSCHARSET=utf-8
 export LESSSECURE=1
-export LESS=-R
+export LESS=-FR
 [ -x /usr/bin/lesspipe ] && eval "$(lesspipe)"
 
 # vi mode
@@ -22,5 +22,9 @@ set -o vi
 # Set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
+fi
+
+if [ -d "$HOME/.local/bin" ] ; then
+    PATH="$HOME/.local/bin:$PATH"
 fi
 
