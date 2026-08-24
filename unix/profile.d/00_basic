@@ -13,7 +13,7 @@ export BROWSER=google-chrome
 export PAGER=less
 export LESSCHARSET=utf-8
 export LESSSECURE=1
-export LESS=-FR
+export LESS=-FRX
 [ -x /usr/bin/lesspipe ] && eval "$(lesspipe)"
 
 # vi mode
